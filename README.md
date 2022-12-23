@@ -3,11 +3,17 @@
 
 
 +Proyecto Final de Programacion Orientada a Objetos
+
 +Universidad de Matanzas
+
 +Autores:
+
  -Jorge Luis Hechavarria Elias
+
  -Keiber Reconde Diaz
+
  -Luis Denys Ramirez Parra
+
  -Cristan Alejandro Rodriguez Exposito
 
   DESCRIPCION DEL NEGOCIO Y REQUERIMIENTOS:
