@@ -12,6 +12,10 @@ package Vista;
  */
 public class System extends javax.swing.JFrame {
 
+    static void exit(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     /**
      * Creates new form System
      */
@@ -183,6 +187,7 @@ public class System extends javax.swing.JFrame {
         jScrollPane3.setViewportView(jTable2);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
 
         jInternalFrame1.setBackground(new java.awt.Color(204, 204, 255));
         jInternalFrame1.setMaximizable(true);
@@ -228,6 +233,11 @@ public class System extends javax.swing.JFrame {
         });
 
         jButton1.setText("Empleados");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
@@ -297,8 +307,9 @@ public class System extends javax.swing.JFrame {
 
     private void BottonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BottonSalirActionPerformed
         
+     this.dispose();
      
-      this.dispose();// TODO add your handling code here:
+     
     }//GEN-LAST:event_BottonSalirActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -306,7 +317,7 @@ public class System extends javax.swing.JFrame {
       ventana3.setVisible(true);
       ventana3.setLocationRelativeTo(null); 
       
-ventana3.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
+      ventana3.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
       this.dispose();// TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -336,6 +347,15 @@ Login ventana = new Login();
         ventana4.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
         this.dispose();// TODO add your handling code here:        // TODO
     }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+  Empleados ventana5 = new Empleados(); 
+      ventana5.setVisible(true);
+      ventana5.setLocationRelativeTo(null);
+      
+      ventana5.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
+      this.dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments

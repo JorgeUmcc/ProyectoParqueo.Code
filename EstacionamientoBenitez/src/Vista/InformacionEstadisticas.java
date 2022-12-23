@@ -6,18 +6,51 @@
 
 package Vista;
 
+import Controlador.GuardarArchivos;
+import Modelo.InformacionEstadistica;
+import java.util.ArrayList;
+
 /**
  *
  * @author Jorgito
  */
 public class InformacionEstadisticas extends javax.swing.JFrame {
-
+  Object[][] lista;
     /**
-     * Creates new form InformacionEstadisticas
+     * Creates new form InformacionEstadistica
      */
     public InformacionEstadisticas() {
         initComponents();
+         ArrayList<InformacionEstadistica> estadisticas = new ArrayList<>();
+        try{
+        estadisticas = GuardarArchivos.readFileTextInformacionEstadistica();
+        
+        lista = new Object[estadisticas.size()][4];
+        for(int i =0;i<estadisticas.size();i++){
+            lista[i][0]= estadisticas.get(i).getMatricula();
+            lista[i][1]= estadisticas.get(i).getHoraEntrada();
+            lista[i][2]= estadisticas.get(i).getHoraSalida();
+            lista[i][3]= estadisticas.get(i).getNumeroPlaza();
+        }
+        
+        
+        TableEstadisticas.setModel(new javax.swing.table.DefaultTableModel(
+            lista,
+            new String [] {
+                "Matricula", "Hora de entrada", "Horade salida", "# de plaza"
+            }
+        ));
+        }
+        catch(Exception ex){
+            
+        }
+        this.setTitle("Estacionamiento Benitez");
     }
+        
+        
+        
+        
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -39,10 +72,16 @@ public class InformacionEstadisticas extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
         jProgressBar1 = new javax.swing.JProgressBar();
-        jPanel1 = new javax.swing.JPanel();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        jInternalFrame1 = new javax.swing.JInternalFrame();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        TableEstadisticas = new javax.swing.JTable();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu2 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
@@ -64,11 +103,6 @@ public class InformacionEstadisticas extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(jList1);
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jInternalFrame1.setBackground(new java.awt.Color(204, 204, 255));
-        jInternalFrame1.setVisible(true);
-
         jLabel1.setFont(new java.awt.Font("Arial Black", 2, 24)); // NOI18N
         jLabel1.setText("Información y Estadisticas");
 
@@ -79,26 +113,104 @@ public class InformacionEstadisticas extends javax.swing.JFrame {
             }
         });
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(722, 465));
+        setResizable(false);
+
+        jInternalFrame1.setBackground(new java.awt.Color(204, 204, 255));
+        jInternalFrame1.setVisible(true);
+
+        TableEstadisticas.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "matricula", "Hora de entrada", "Hora de salida", "# de plaza"
+            }
+        ));
+        jScrollPane3.setViewportView(TableEstadisticas);
+        if (TableEstadisticas.getColumnModel().getColumnCount() > 0) {
+            TableEstadisticas.getColumnModel().getColumn(0).setResizable(false);
+            TableEstadisticas.getColumnModel().getColumn(1).setResizable(false);
+            TableEstadisticas.getColumnModel().getColumn(2).setResizable(false);
+            TableEstadisticas.getColumnModel().getColumn(3).setResizable(false);
+        }
+
+        jMenu2.setText("Información y Estadisticas");
+
+        jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem2.setText("Guardar cambios");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem2);
+
+        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem3.setText("Volver al menú");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem3);
+
+        jMenuBar1.add(jMenu2);
+
+        jInternalFrame1.setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
         jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
         jInternalFrame1Layout.setHorizontalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                .addGap(155, 155, 155)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 188, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(66, 66, 66))
+            .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 706, Short.MAX_VALUE)
         );
         jInternalFrame1Layout.setVerticalGroup(
             jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 347, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(30, 30, 30))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 407, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -139,6 +251,35 @@ public class InformacionEstadisticas extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox1ActionPerformed
 
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+   System ventana1 = new System(); 
+      ventana1.setVisible(true);
+      ventana1.setLocationRelativeTo(null);
+      
+      ventana1.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
+      this.dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+
+        ArrayList<InformacionEstadistica> estadisticas=new ArrayList<>();
+        
+        for(int i =0;i< TableEstadisticas.getRowCount();i++){
+            String matricula = (String) TableEstadisticas.getValueAt(i, 0);
+            String HoraEntrada = (String) TableEstadisticas.getValueAt(i, 1);
+            String HoraSalida = (String) TableEstadisticas.getValueAt(i, 2);
+            String NumeroPlaza = (String) TableEstadisticas.getValueAt(i, 3);
+            
+           estadisticas .add(new InformacionEstadistica(matricula,HoraEntrada,HoraSalida,NumeroPlaza));
+        }
+        try{
+            GuardarArchivos.writeFileTextInformacionEstadistica(estadisticas);
+        }
+        catch(Exception ex){
+            
+        }        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -147,6 +288,7 @@ public class InformacionEstadisticas extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable TableEstadisticas;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JButton jButton1;
@@ -155,12 +297,17 @@ public class InformacionEstadisticas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JList jList1;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JProgressBar jProgressBar1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTree jTree1;
     // End of variables declaration//GEN-END:variables
 }

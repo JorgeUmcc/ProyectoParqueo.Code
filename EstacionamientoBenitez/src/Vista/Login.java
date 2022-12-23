@@ -6,6 +6,10 @@
 
 package Vista;
 
+import Controlador.GuardarArchivos;
+import Modelo.Usuario;
+import java.util.ArrayList;
+
 /**
  *
  * @author Jorgito
@@ -32,15 +36,23 @@ public class Login extends javax.swing.JFrame {
         jToggleButton1 = new javax.swing.JToggleButton();
         jToggleButton2 = new javax.swing.JToggleButton();
         jButton2 = new javax.swing.JButton();
-        jPanel1 = new javax.swing.JPanel();
-        jInternalFrame1 = new javax.swing.JInternalFrame();
-        txtLogin = new javax.swing.JLabel();
-        LabelNombreDeUsuario = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
+        jSlider1 = new javax.swing.JSlider();
+        jFormattedTextField1 = new javax.swing.JFormattedTextField();
+        jCheckBox1 = new javax.swing.JCheckBox();
         txtNombreUsuario = new javax.swing.JTextField();
-        LabelContrasenna = new javax.swing.JLabel();
-        pfContraseña = new javax.swing.JPasswordField();
-        BotonIniciarSesion = new javax.swing.JButton();
-        jMenuBar1 = new javax.swing.JMenuBar();
+        jPanel1 = new javax.swing.JPanel();
+        jInternalFrame4 = new javax.swing.JInternalFrame();
+        txtLogin3 = new javax.swing.JLabel();
+        LabelNombreDeUsuario3 = new javax.swing.JLabel();
+        LabelContrasenna3 = new javax.swing.JLabel();
+        pfContraseña3 = new javax.swing.JPasswordField();
+        BotonIniciarSesion3 = new javax.swing.JButton();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
+        jMenuBar4 = new javax.swing.JMenuBar();
 
         jToggleButton1.setText("jToggleButton1");
 
@@ -54,17 +66,13 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jTextField1.setText("jTextField1");
 
-        jInternalFrame1.setBackground(new java.awt.Color(204, 204, 255));
-        jInternalFrame1.setPreferredSize(new java.awt.Dimension(722, 465));
-        jInternalFrame1.setVisible(true);
+        jScrollPane1.setViewportView(jEditorPane1);
 
-        txtLogin.setFont(new java.awt.Font("Arial Black", 2, 40)); // NOI18N
-        txtLogin.setText("Iniciar sesion");
+        jFormattedTextField1.setText("jFormattedTextField1");
 
-        LabelNombreDeUsuario.setText("Nombre de Usuario");
-        LabelNombreDeUsuario.setToolTipText("");
+        jCheckBox1.setText("jCheckBox1");
 
         txtNombreUsuario.setBackground(java.awt.Color.lightGray);
         txtNombreUsuario.addActionListener(new java.awt.event.ActionListener() {
@@ -73,79 +81,99 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
-        LabelContrasenna.setText("Contraseña");
-        LabelContrasenna.setToolTipText("");
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login");
+        setResizable(false);
 
-        pfContraseña.setBackground(java.awt.Color.lightGray);
-        pfContraseña.addActionListener(new java.awt.event.ActionListener() {
+        jInternalFrame4.setBackground(new java.awt.Color(204, 204, 255));
+        jInternalFrame4.setPreferredSize(new java.awt.Dimension(722, 465));
+        jInternalFrame4.setVisible(true);
+
+        txtLogin3.setFont(new java.awt.Font("Arial Black", 2, 40)); // NOI18N
+        txtLogin3.setText("Iniciar sesion");
+
+        LabelNombreDeUsuario3.setText(" Usuario");
+        LabelNombreDeUsuario3.setToolTipText("");
+
+        LabelContrasenna3.setText("Contraseña");
+        LabelContrasenna3.setToolTipText("");
+
+        pfContraseña3.setBackground(java.awt.Color.lightGray);
+        pfContraseña3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pfContraseñaActionPerformed(evt);
             }
         });
 
-        BotonIniciarSesion.setBackground(new java.awt.Color(255, 255, 255));
-        BotonIniciarSesion.setText("Iniciar Sesion");
-        BotonIniciarSesion.addActionListener(new java.awt.event.ActionListener() {
+        BotonIniciarSesion3.setBackground(new java.awt.Color(255, 255, 255));
+        BotonIniciarSesion3.setText("Iniciar Sesion");
+        BotonIniciarSesion3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BotonIniciarSesionActionPerformed(evt);
             }
         });
-        jInternalFrame1.setJMenuBar(jMenuBar1);
 
-        javax.swing.GroupLayout jInternalFrame1Layout = new javax.swing.GroupLayout(jInternalFrame1.getContentPane());
-        jInternalFrame1.getContentPane().setLayout(jInternalFrame1Layout);
-        jInternalFrame1Layout.setHorizontalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
+        jInternalFrame4.setJMenuBar(jMenuBar4);
+
+        javax.swing.GroupLayout jInternalFrame4Layout = new javax.swing.GroupLayout(jInternalFrame4.getContentPane());
+        jInternalFrame4.getContentPane().setLayout(jInternalFrame4Layout);
+        jInternalFrame4Layout.setHorizontalGroup(
+            jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrame4Layout.createSequentialGroup()
                 .addGap(123, 123, 123)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jInternalFrame1Layout.createSequentialGroup()
-                        .addComponent(LabelContrasenna, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(pfContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                        .addComponent(LabelNombreDeUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, 154, Short.MAX_VALUE)
+                .addGroup(jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jInternalFrame4Layout.createSequentialGroup()
+                        .addComponent(LabelNombreDeUsuario3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(213, 213, 213))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                        .addComponent(BotonIniciarSesion)
-                        .addGap(304, 304, 304))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame1Layout.createSequentialGroup()
-                        .addComponent(txtLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(162, 162, 162))))
+                        .addGroup(jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame4Layout.createSequentialGroup()
+                                    .addComponent(BotonIniciarSesion3)
+                                    .addGap(304, 304, 304))
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jInternalFrame4Layout.createSequentialGroup()
+                                    .addComponent(txtLogin3, javax.swing.GroupLayout.PREFERRED_SIZE, 339, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(162, 162, 162)))
+                            .addGroup(jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jTextField5, javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(pfContraseña3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE))))
+                    .addGroup(jInternalFrame4Layout.createSequentialGroup()
+                        .addComponent(LabelContrasenna3, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(438, Short.MAX_VALUE))))
+            .addGroup(jInternalFrame4Layout.createSequentialGroup()
+                .addGap(137, 137, 137)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
-        jInternalFrame1Layout.setVerticalGroup(
-            jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jInternalFrame1Layout.createSequentialGroup()
+        jInternalFrame4Layout.setVerticalGroup(
+            jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jInternalFrame4Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
-                .addComponent(txtLogin)
+                .addComponent(txtLogin3)
                 .addGap(70, 70, 70)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LabelNombreDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNombreUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelNombreDeUsuario3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(65, 65, 65)
-                .addGroup(jInternalFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LabelContrasenna)
-                    .addComponent(pfContraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jInternalFrame4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LabelContrasenna3)
+                    .addComponent(pfContraseña3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(60, 60, 60)
-                .addComponent(BotonIniciarSesion)
-                .addContainerGap(79, Short.MAX_VALUE))
+                .addComponent(BotonIniciarSesion3)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 23, Short.MAX_VALUE)
+                .addGap(38, 38, 38))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jInternalFrame1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jInternalFrame4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jInternalFrame1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jInternalFrame4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -166,24 +194,46 @@ public class Login extends javax.swing.JFrame {
         
     }//GEN-LAST:event_txtNombreUsuarioActionPerformed
 
-    private void BotonIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonIniciarSesionActionPerformed
-      System ventana1 = new System(); 
-      ventana1.setVisible(true);
-      ventana1.setLocationRelativeTo(null);
-      
-      ventana1.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
-      this.dispose();
-      
-      
-    }//GEN-LAST:event_BotonIniciarSesionActionPerformed
-
-    private void pfContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pfContraseñaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_pfContraseñaActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
 
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void BotonIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BotonIniciarSesionActionPerformed
+        
+        ArrayList<Usuario> Usuario= new ArrayList<>();
+        try{
+            Usuario = GuardarArchivos.readFileTextLogin();
+            for(int i =0;i<Usuario.size();i++){
+                if(Usuario.get(i).getName().equals(jTextField5.getText())){
+                    if(Usuario.get(i).getPassword().equals(pfContraseña3.getText())){
+                        
+        
+                        System ventana1 = new System();
+                        ventana1.setVisible(true);
+                        ventana1.setLocationRelativeTo(null);
+
+                        ventana1.setBounds(this.getX(), this.getY(), this.getWidth(), this.getHeight());
+                        this.dispose();
+                    }
+                else{
+                    jLabel1.setText("Nombre de usuario o contrasenna incorrecto");
+                }
+                }
+                else{
+                    jLabel1.setText("Nombre de usuario o contrasenna incorrecto");
+                }
+            }
+        }
+       catch(Exception ex){
+       //     jLabel1.setText("No hay datos");
+        }
+        
+
+    }//GEN-LAST:event_BotonIniciarSesionActionPerformed
+
+    private void pfContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pfContraseñaActionPerformed
+        
+    }//GEN-LAST:event_pfContraseñaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -191,17 +241,25 @@ public class Login extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BotonIniciarSesion;
-    private javax.swing.JLabel LabelContrasenna;
-    private javax.swing.JLabel LabelNombreDeUsuario;
+    private javax.swing.JButton BotonIniciarSesion3;
+    private javax.swing.JLabel LabelContrasenna3;
+    private javax.swing.JLabel LabelNombreDeUsuario3;
     private javax.swing.JButton jButton2;
-    private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JEditorPane jEditorPane1;
+    private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JInternalFrame jInternalFrame4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JMenuBar jMenuBar4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSlider jSlider1;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField5;
     private javax.swing.JToggleButton jToggleButton1;
     private javax.swing.JToggleButton jToggleButton2;
-    private javax.swing.JPasswordField pfContraseña;
-    private javax.swing.JLabel txtLogin;
+    private javax.swing.JPasswordField pfContraseña3;
+    private javax.swing.JLabel txtLogin3;
     private javax.swing.JTextField txtNombreUsuario;
     // End of variables declaration//GEN-END:variables
 }

@@ -16,15 +16,15 @@ import java.io.Serializable;
 public class Usuario implements Serializable{
     
     private String name;
-    private String ID;
+   
     private String password;
 
     public Usuario() {
     }
 
-    public Usuario(String name, String ID, String password) {
+    public Usuario(String name, String password) {
         this.name = name;
-        this.ID = ID;
+        
         this.password = password;
     }
 
@@ -36,13 +36,7 @@ public class Usuario implements Serializable{
         this.name = name;
     }
 
-    public String getID() {
-        return ID;
-    }
-
-    public void setID(String ID) {
-        this.ID = ID;
-    }
+   
 
     public String getPassword() {
         return password;
@@ -52,5 +46,8 @@ public class Usuario implements Serializable{
         this.password = password;
     }
     
-    
+     @Override
+    public String toString(){
+        return "{"+"nombre: "+name+"contraseña: "+password+" }";
+    }
 }

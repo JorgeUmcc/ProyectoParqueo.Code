@@ -12,14 +12,9 @@
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/Parqueador_JorgeH/src/Vista/Main.java</file>
-            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/Parqueador_JorgeH/src/Vista/Login.java</file>
-            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/Parqueador_JorgeH/src/Vista/System.java</file>
-            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/Parqueador_JorgeH/src/Vista/Clientes.java</file>
-            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/Parqueador_JorgeH/src/Vista/Vehiculos.java</file>
-            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/Parqueador_JorgeH/src/Vista/InformacionEstadisticas.java</file>
-            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/Parqueador_JorgeH/src/Modelo/Usuario.java</file>
-            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/Parqueador_JorgeH/src/Modelo/Cliente.java</file>
+            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/EstacionamientoBenitez/src/Vista/Login.java</file>
+            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/EstacionamientoBenitez/src/Controlador/Main.java</file>
+            <file>file:/C:/Users/Jorgito/Documents/NetBeansProjects/EstacionamientoBenitez/src/Controlador/GuardarArchivos.java</file>
         </group>
     </open-files>
 </project-private>

@@ -6,36 +6,41 @@
 
 package Modelo;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Jorgito
  */
-public class Cliente {
+public class Cliente implements Serializable{
     
-    private String name;
+    private String nombre;
     private String ci;
     private String telefono;
     private String direccion;
     
     public Cliente(){
+        this.nombre = "Jorge";
+        this.ci = "02020560345";
+        this.telefono = "55215843";
+        this.direccion = "Cardenas";
         }
     
     public Cliente(String name,String ci, String telefono, String direccion) {
             
-    this.name=name;
+    this.nombre=name;
     this.ci=ci;
-    this.direccion=direccion;
     this.telefono=telefono;
-    
+    this.direccion=direccion;
     }
     
     
     public String getName() {
-        return name;
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getCi() {
@@ -61,5 +66,8 @@ public class Cliente {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
-    
+    @Override
+    public String toString(){
+        return "{"+"nombre: "+nombre+" ci: "+ci+" Telefono: "+telefono+" direccion: "+direccion+" }";
+    }
 }
