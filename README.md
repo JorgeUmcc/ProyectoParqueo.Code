@@ -36,7 +36,10 @@ Este es el Proyecto Final de la asignatura Diseño y Programacion Orientada a Ob
  
  ## Colaboradores:
  * [JorgeUmcc]( https://github.com/JorgeUmcc )
- * [
+ * [luisdenyso0126](https://github.com/luisdenys0126)
+ * [     ](        )
+ * [     ](        )
+ 
  
 
 
