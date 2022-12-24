@@ -48,7 +48,7 @@ Este es el Proyecto Final de la asignatura Diseño y Programacion Orientada a Ob
 Para la realizacion de esta parte del proyecto utilice las clases Usuario y Cliente del paquete modelo realizando varios metodos para guardar la informacion con el Trabajo con archivos, hice una especie de login que es lo primero que ejecuta el main y me permite controlar el acceso al porgrama, tambien estan implementadas las interfaces graficas del Login y el modulo de Clientes.
 A continuacion mopstraré el codigo de dichas clases y los metodos de guardado ulilizados en la clase GuardarArchivos.
 * (https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/main/EstacionamientoBenitez/src/Modelo/Cliente.java)
-* ()
+* (https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/main/EstacionamientoBenitez/src/Modelo/Usuario.java)
 * ()
  
  
