@@ -35,10 +35,10 @@ Este es el Proyecto Final de la asignatura Diseño y Programacion Orientada a Ob
  Al inicializar el programa se necesita comprobar su identidad con un Usuario y Contraseña previamente acordado en el negocio, luego de iniciar sesion entramos a la ventana principal de este donde se podra comenzar a registrar los Clientes y Vehiculos que estacionaran en nuesrto parqueo. Tambien hay un registro de los Empleados que trabajan en el Estacionamiento otro para guardar datos estadisticos del parqueo.
  
  ## Colaboradores:
- * [JorgeUmcc]( https://github.com/JorgeUmcc )
- * [luisdenyso0126](https://github.com/luisdenys0126)
- * [     ](        )
- * [     ](        )
+ * [Jorge Luis Hechavarria]( https://github.com/JorgeUmcc )
+ * [Luis Denis](https://github.com/luisdenys0126)
+ * [Cristian Alejandro Rodriguez](https://github.com/crissrdguez)
+ * [Keiber Reconde](        )
  
  
 
