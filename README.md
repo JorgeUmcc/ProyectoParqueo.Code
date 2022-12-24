@@ -42,8 +42,14 @@ Este es el Proyecto Final de la asignatura Diseño y Programacion Orientada a Ob
  
  ## Descripcion de los modulos de los colaboradores
  ### Jorge Luis Hechavarria
- El modulo consiste en la gestión de Usuarios y Clientes del proyecto, a continuación un enlace para visualizar mi porción de el Diagrama UML 
- * (  )
+ El modulo consiste en la gestión de Usuarios y Clientes del proyecto, con este enlace se puede visualizar mi porción del Diagrama UML de Visual Parading
+ * (https://github.com/JorgeUmcc/ProyectoParqueo.VP/blob/main/Imagen%20del%20modulo%20de%20JORGE/Porcion%20de%20JorgeUmcc.jpg)
+
+Para la realizacion de esta parte del proyecto utilice las clases Usuario y Cliente del paquete modelo realizando varios metodos para guardar la informacion con el Trabajo con archivos, hice una especie de login que es lo primero que ejecuta el main y me permite controlar el acceso al porgrama, tambien estan implementadas las interfaces graficas del Login y el modulo de Clientes.
+A continuacion mopstraré el codigo de dichas clases y los metodos de guardado ulilizados en la clase GuardarArchivos.
+()
+()
+()
  
  
 
