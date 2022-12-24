@@ -1,19 +1,12 @@
 # ProyectoParqueo 
-## Este es el codigo del proyecto de el parqueo
-
-
-+Proyecto Final de Programacion Orientada a Objetos
-
-+Universidad de Matanzas
+Proyecto Final de Programacion Orientada a Objetos
+Universidad de Matanzas
 
 +Autores:
 
  -Jorge Luis Hechavarria Elias
-
  -Keiber Reconde Diaz
-
  -Luis Denys Ramirez Parra
-
  -Cristan Alejandro Rodriguez Exposito
 
   DESCRIPCION DEL NEGOCIO Y REQUERIMIENTOS:
