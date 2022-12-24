@@ -36,9 +36,14 @@ Este es el Proyecto Final de la asignatura Diseño y Programacion Orientada a Ob
  
  ## Colaboradores:
  * [Jorge Luis Hechavarria]( https://github.com/JorgeUmcc )
- * [Luis Denis](https://github.com/luisdenys0126)
+ * [Luis Denis Ramirez](https://github.com/luisdenys0126)
  * [Cristian Alejandro Rodriguez](https://github.com/crissrdguez)
- * [Keiber Reconde](        )
+ * [Keiber Reconde](https://github.com/keiber21)
+ 
+ ## Descripcion de los modulos de los colaboradores
+ ### Jorge Luis Hechavarria
+ El modulo consiste en la gestión de Usuarios y Clientes del proyecto, a continuación un enlace para visualizar mi porción de el Diagrama UML 
+ * (  )
  
  
 
