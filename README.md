@@ -62,7 +62,7 @@ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad349
  ### Keiber Reconde
  Pendiente...
  
- Cristian Alejandro Rodriguez
+### Cristian Alejandro Rodriguez
  Pendiente...
  
 
