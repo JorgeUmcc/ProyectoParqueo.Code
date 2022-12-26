@@ -56,5 +56,14 @@ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad349
 https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad34907359d7466e7a05/EstacionamientoBenitez/src/Controlador/GuardarArchivos.java#L7-L144
  
  
+ ### Luis Denis Ramirez
+ Pendiente...
+ 
+ ### Keiber Reconde
+ Pendiente...
+ 
+ Cristian Alejandro Rodriguez
+ Pendiente...
+ 
 
 
