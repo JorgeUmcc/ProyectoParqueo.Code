@@ -52,8 +52,7 @@ hacia la garita o PSP donde se encuentra el encargado y brindarle los datos que 
 Para la realizacion de esta parte del proyecto utilice las clases Usuario y Cliente del paquete modelo realizando varios metodos para guardar la informacion con el Trabajo con archivos, primeramente hice una especie de login que es lo primero que ejecuta el main y me permite controlar el acceso al porgrama en la creación de este login interviene la clase Usuario del paquete Modelo y sus respectivos atributos, tambien esta implementada la interface grafica de la ventana del Login y la interfaz grafica de la ventana donde se gestionaran los clientes del estacionamiento.
 A continuacion mopstraré mediante links el codigo de dichas clases y los metodos de guardado ulilizados en la clase GuardarArchivos.
 https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/ad368e595ed97a948fec4eb8da38c8bde83e9041/EstacionamientoBenitez/src/Modelo/Cliente.java#L15-L73
-* (https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/main/EstacionamientoBenitez/src/Modelo/Cliente.java)
-* (https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/main/EstacionamientoBenitez/src/Modelo/Usuario.java)
+https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad34907359d7466e7a05/EstacionamientoBenitez/src/Modelo/Usuario.java#L15-L53
 * (https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/main/EstacionamientoBenitez/src/Controlador/GuardarArchivos.java)
  
  
