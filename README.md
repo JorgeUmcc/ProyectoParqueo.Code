@@ -29,7 +29,7 @@ Este es el Proyecto Final de la asignatura Diseño y Programacion Orientada a Ob
  del proyecto.
  
  ## Instalacion:
- Para poder ejecutar esta aplicacion solo es nesesario la instalacion de JRE 7.51 o superior.El ejecutable se encuentra en la carpeta **EstacionamientoBenitez/dist/**
+  El programa se realizó en la versión 7.4 del IDE NetBeans. Para poder ejecutar esta aplicacion solo es nesesario la instalacion de JRE 7.51 o superior.El ejecutable se encuentra en la carpeta **EstacionamientoBenitez/dist/**
  
  ## Uso y Guia Basica
  Al inicializar el programa se necesita comprobar su identidad con un Usuario y Contraseña previamente acordado en el negocio, luego de iniciar sesion entramos a la ventana principal de este donde se podra comenzar a registrar los Clientes y Vehiculos que estacionaran en nuesrto parqueo. Tambien hay un registro de los Empleados que trabajan en el Estacionamiento otro para guardar datos estadisticos del parqueo.
@@ -43,7 +43,7 @@ Este es el Proyecto Final de la asignatura Diseño y Programacion Orientada a Ob
  ## Descripcion individual de los modulos de los colaboradores
  ### Jorge Luis Hechavarria
 
- Daré una explicación detallada de mi parte del negocio y del negocio en general, en el parqueo trabaja un encargado, jefe de turno,o parquedor cómo lo quieran llamar, él y sólo él es el encargado de utilizar y gestionar la información que está en la aplicación, este puesto cuenta con 3 turnos, osea que en total solo 3 personas tienen el conocimiento y la autorización de ingresar a la aplicación, cada uno de ellos cuenta con un usuario y contraseña que solo ellos conocen y así se restringe la entrada, cuando un auto ingresa a el estacionamiento y parquea el dueño se tiene que dirigir
+ Daré una explicación detallada de mi parte del negocio y del negocio en general, en el parqueo trabaja un encargado, jefe de turno,o parquedor cómo lo quieran llamar, él y sólo él es el encargado de utilizar y gestionar la información que está en la aplicación, este puesto cuenta con 3 turnos, osea que en total solo 3 personas tienen el conocimiento y la autorización de ingresar a la aplicación, cada uno de ellos cuenta con un usuario y contraseña que solo ellos conocen y así se restringe la entrada, al ejecutar el programa la primera ventana que se sale es la del Login, cuando el Usuario se autentique en la aplicación puede acceder a la ventana principal donde están los campos de gestión de Clientes, Vehículos, Empleados y Estadísticas. Cuando un auto ingresa a el estacionamiento y parquea el dueño se tiene que dirigir
 hacia la garita o PSP donde se encuentra el encargado y brindarle los datos que este le pida, datos que este encargado introducirá en la aplicación para su almacenamiento. Antes de que el cliente se valla y abandone el parqueo tiene que ir otra vez a la garita y pagar el tiempo que estuvo parqueado su auto, entonces es cuando culmina el negocio.
 
  El modulo que realicé consiste en la gestión de Usuarios y Clientes del proyecto, con este enlace se puede visualizar mi porción del Diagrama UML de Visual Parading
