@@ -57,7 +57,7 @@ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad349
  
  
  ### Luis Denis Ramirez
- Mi porción del proyecto es la gestión de Vehículos del mismo para hacerlo puse....
+ Mi porción del proyecto es la gestión de la información del mismo para hacerlo cree el módulo gestión de la información e implemente la clase gestión de estadística la cual está formada por cuatro atributos 1: matrícula 2: hora entrada 3: hora salida 4: ....y sus respectivos métodos. En el siguiente enlace se puede ver la parte de mi diagrama UML en Visual Paradin ghttps://github.com/JorgeUmcc/ProyectoParqueo.VP/tree/main/Imagen%20del%20modulo%20de%20LUIS
  
  ### Keiber Reconde
  La descripcion de mi porcion del proyecto es:Luego de que el encargado o jefe de turno entre a la aplicacion y se autentique con su usuario y contrasenna podra acceder a mi modulo que es la gestion de los vehiculos del parqueo.Cuando el cliente se acerque al encargado este le pedira los datos de su vehiculo que son la matricula,el modelo y el color para tener constancia y conocer cual es el vehiculo del cliente
