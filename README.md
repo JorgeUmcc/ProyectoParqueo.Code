@@ -65,7 +65,9 @@ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad349
  La descripcion de mi porcion del proyecto es:Luego de que el encargado o jefe de turno entre a la aplicacion y se autentique con su usuario y contrasenna podra acceder a mi modulo que es la gestion de los vehiculos del parqueo.Cuando el cliente se acerque al encargado este le pedira los datos de su vehiculo que son la matricula,el modelo y el color para tener constancia y conocer cual es el vehiculo del cliente
  
 ### Cristian Alejandro Rodriguez
- Pendiente...
+ Mi parte en el proyecto corresponde a a todo lo que concierne a la gestion de empleado,su clase asi como sus atributos y las interfaz grafica correspondiente.La clase empleado cuenta con 3 atributos:horario,cargo y sueldo;asi como los que herada de la clase persona,los cuales permiten un control eficaz de los empleados de la empresa.En el siguiente enlace se encuentra la clase empleado mas detallada en diagrama UML :
+ ![Screenshot] https://github.com/JorgeUmcc/ProyectoParqueo.VP/blob/main/Imagen%20del%20modulo%20de%20CRISTIAN/CRISTIAN.jpg
+ Una vez que el usuario inicie sesion en la aplicacion tendra a la vista el Boton "Empleado" el cual lo llevara a la ventana en la cual se encuentran alojados los datos.Una vez aqui puede intrudir nuevos datos de empleados,cambiar algunos o eliminarlos,cambios q podra guardar al presionar Ctrl+s o en la esquina superior izquierda presionando el menu desplegable la opcion "Guardar cambios".Para salir hacia el menu principal se presiona en el menu desplegable la opcion "Volver al menu" o se presiona Ctrl+z.
  
 
 
