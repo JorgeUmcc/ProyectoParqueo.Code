@@ -69,6 +69,10 @@ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad349
  El modulo que hice consiste en la gestion de vehiculos del estacionamiento, a continuacion mostrare mi diagrama UMl
  ![Screenshot](https://github.com/JorgeUmcc/ProyectoParqueo.VP/blob/main/Imagen%20del%20modulo%20de%20KEIBER/KEIBER.jpg)
  
+ Enlaces de las clases que hice.
+ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad34907359d7466e7a05/EstacionamientoBenitez/src/Modelo/Vehiculo.java#L15-L68
+
+ 
  
 ### Cristian Alejandro Rodriguez
  Pendiente...
