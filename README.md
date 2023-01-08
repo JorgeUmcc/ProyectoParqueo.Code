@@ -71,6 +71,9 @@ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad349
  
  Enlaces de las clases que hice.
  https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad34907359d7466e7a05/EstacionamientoBenitez/src/Modelo/Vehiculo.java#L15-L68
+ 
+ Interfaz grafica que hice
+ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad34907359d7466e7a05/EstacionamientoBenitez/src/Vista/Vehiculos.java#L15-L275
 
  
  
