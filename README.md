@@ -79,7 +79,7 @@ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad349
  
 ### Cristian Alejandro Rodriguez
  Mi parte en el proyecto corresponde a a todo lo que concierne a la gestion de empleado,su clase asi como sus atributos y las interfaz grafica correspondiente.La clase empleado cuenta con 3 atributos:horario,cargo y sueldo;asi como los que herada de la clase persona,los cuales permiten un control eficaz de los empleados de la empresa.En el siguiente enlace se encuentra la clase empleado mas detallada en diagrama UML :
- ![Screenshot] https://github.com/JorgeUmcc/ProyectoParqueo.VP/blob/main/Imagen%20del%20modulo%20de%20CRISTIAN/CRISTIAN.jpg
+ ! [Screenshot] https://github.com/JorgeUmcc/ProyectoParqueo.VP/blob/main/Imagen%20del%20modulo%20de%20CRISTIAN/CRISTIAN.jpg
  Una vez que el usuario inicie sesion en la aplicacion tendra a la vista el Boton "Empleado" el cual lo llevara a la ventana en la cual se encuentran alojados los datos.Una vez aqui puede intrudir nuevos datos de empleados,cambiar algunos o eliminarlos,cambios q podra guardar al presionar Ctrl+s o en la esquina superior izquierda presionando el menu desplegable la opcion "Guardar cambios".Para salir hacia el menu principal se presiona en el menu desplegable la opcion "Volver al menu" o se presiona Ctrl+z.
 
 
