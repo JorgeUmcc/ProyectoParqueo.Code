@@ -69,10 +69,11 @@ https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad349
  El modulo que hice consiste en la gestion de vehiculos del estacionamiento, a continuacion mostrare mi diagrama UMl
  ![Screenshot](https://github.com/JorgeUmcc/ProyectoParqueo.VP/blob/main/Imagen%20del%20modulo%20de%20KEIBER/KEIBER.jpg)
  
- Enlaces de las clases que hice.
+ Para la realizacion de  esta parte utilice la clase Vehiculos realizando en este varios metodos para guardar los datos de cada vehiculo que se estaciona en el parqueo con sus respectivos atributos,introduciendo y guardando el modelo, elcolor, la matricula y el propietario de cada automovil,permitiendo una mayor organizacion para tener constancia y saber el vehiculo de cada cliente. Tambien esta implementada la interfaz grafica donde se encuentra los datos de cada vehiculo de sus respectivos clientes. 
+A continuacion les mostrare el siguiente enlace de la clase que realice:
  https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad34907359d7466e7a05/EstacionamientoBenitez/src/Modelo/Vehiculo.java#L15-L68
  
- Interfaz grafica que hice
+A continuacion les mostrare la interfaz grafica que realice:
  https://github.com/JorgeUmcc/ProyectoParqueo.Code/blob/5ad97aa8e4264e175cd1ad34907359d7466e7a05/EstacionamientoBenitez/src/Vista/Vehiculos.java#L15-L275
 
  
